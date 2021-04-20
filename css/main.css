@@ -1,0 +1,130 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX GLOBAL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX GLOBAL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX GLOBAL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+html{font-size: 62.5%;}
+
+body{
+  font-family:'Open Sans', sans-serif;
+  background-color: #F2F1F4;
+  font-size: 1.6rem;
+}
+
+.container{
+  padding: 2%;
+  margin: 0 auto;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX HEADER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX HEADER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX HEADER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav{
+  background-color: #30A894;  
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #F2F1F4;
+  font-size: 2.4rem;
+  padding: 3% 0;
+  text-align: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 4rem;
+  color: #30A894;
+  border-bottom: 1px solid #30A894;
+  padding-bottom:1%;
+  
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MAIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MAIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MAIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+
+h2{ 
+  font-size: 2.4rem;
+  color: #30A894;
+  border-bottom: 1px solid #30A894;
+  padding-bottom:1%;
+}
+
+p{color: rgba(0, 0, 0,0.5);}
+
+main > section >  article img {
+  width: 100%;
+}
+
+p>a{
+  color: #30A894;
+  text-decoration: none;
+}
+
+aside{display: none;}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+footer{
+  text-align: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 6%;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXX MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* 1200 PC 1024TB*/
+@media screen and (min-width: 640px)and (max-width: 1200px)
+{
+  aside{
+    display: block;
+    background-color: #B8DCB1;
+    padding: 2%;
+  }
+} 
+
+@media screen and (min-width: 1200px)
+{
+  .container
+  {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  nav a{
+    display: inline-block;
+    margin: 0 9% 0 9%;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside{
+    width: 30%;
+    align-self:flex-start;
+    padding-left: 1%;
+    background-color:#B8DCB1;
+    padding: 2%;
+  }
+      
+  section{
+    width: 70%;
+    padding-right: 1%;    
+  }
+}
